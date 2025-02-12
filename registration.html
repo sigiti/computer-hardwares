@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="registration.js"></script>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form id="registrationForm" action="submit.php" method="POST">
+        <!-- Full Name -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <span id="fullNameError" class="error"></span><br>
+
+        <!-- Registration Number -->
+        <label for="regNumber">Registration Number:</label>
+        <input type="text" id="regNumber" name="regNumber" required>
+        <span id="regNumberError" class="error"></span><br>
+
+        <!-- Sex -->
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span><br>
+
+        <!-- Region and Districts -->
+        <label for="region">Region:</label>
+        <select id="region" name="region" required>
+            <option value="">Select Region</option>
+        </select><br>
+
+        <label for="district">District:</label>
+        <select id="district" name="district" required>
+            <option value="">Select District</option>
+        </select><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="passwordError" class="error"></span><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span id="confirmPasswordError" class="error"></span><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- jQuery Carousel -->
+    <div id="carousel">
+        <img src="images/carousel1.jpg" alt="Image 1">
+        <img src="images/carousel2.jpg" alt="Image 2">
+        <img src="images/carousel3.jpg" alt="Image 3">
+    </div>
+</body>
+</html>
